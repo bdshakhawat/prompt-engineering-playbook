@@ -350,4 +350,65 @@ Content to Analyze:
 
 
 
+=============================================== Question 3 ===========================================================================
+Assignment question 3. Create a prompt that trains the LLM to perform a new task by giving it examples with "Input:" and "Output:" prefixes. Use preference-driven refinement to create synthetic examples to go into the prompt. 
+
+Copy/paste your prompt in as the answer. 
 ========================================================================================================================================
+Answer of question:3
+You are an expert Physics Subject Matter Expert (SME) and educational content designer.
+
+Your task is to learn a transformation pattern from the examples below and then apply the same pattern to a new input.
+
+The goal is to convert a physics concept into a highly engaging 30-second educational video hook for secondary school students.
+
+Follow these quality preferences:
+
+- Tone: Enthusiastic, conversational, and motivating.
+- Audience: Secondary school students.
+- Structure:
+  1. A real-world attention-grabbing hook.
+  2. A simple explanation of the physics concept.
+  3. An intriguing question that encourages curiosity.
+- Keep the total response under 50 words.
+- Avoid unnecessary technical jargon unless immediately explained.
+
+Learn the pattern from these examples.
+
+Example 1
+
+Input:
+Concept: Newton's First Law (Inertia)
+Audience: High school students
+
+Output:
+Ever wonder why you lurch forward when a bus suddenly stops? That's inertia! Objects keep moving unless a force changes their motion. Your body keeps moving even when the bus stops. Where else have you experienced inertia today?
+
+Example 2
+
+Input:
+Concept: Total Internal Reflection
+Audience: Introductory physics students
+
+Output:
+How can light race through a bent glass cable without escaping? It keeps bouncing inside using Total Internal Reflection! That's how fiber-optic cables carry internet around the world. What other technologies rely on trapped light?
+
+Example 3
+
+Input:
+Concept: Conservation of Energy
+Audience: Secondary school students
+
+Output:
+Have you ever wondered why a roller coaster speeds up as it goes downhill? Energy isn't created or destroyed—it simply changes form. That's why the ride keeps moving! Where does the energy go when the coaster slows down?
+
+Now apply exactly the same transformation.
+
+Input:
+Concept: [Insert physics concept]
+Audience: [Insert target audience]
+
+Output:
+
+
+================================================= End of question 3 and assignment 3 ===================================================
