@@ -1,0 +1,86 @@
+Prompt Engineering Case Study
+Case Study 1: Reproduce the Lecture's Webinar Problem-Solving Example
+
+Goal: Recreate the instructor's exact technique — requesting multiple solutions plus a comparison — to observe how it surfaces options 
+that might not come to mind independently.
+
+Prompt Used
+
+"Give me five ways to solve any problem that I give you and compare and contrast them. Ask me for the first problem."
+
+Follow-Up (Problem Provided)
+
+"I need to set up a registration system for a small webinar. I want to send follow-up emails to everyone using the form data they submitted,
+ to generate unique prompts for a large language model based on their area and expertise."
+
+Result
+
+Five distinct methods were generated: Google Forms/Sheets, an event management platform (Eventbrite), a custom web application, a CRM system
+ (HubSpot), and a no-code platform (Airtable + Zapier) — each with pros and cons.
+
+Observation
+
+The fifth option (no-code platform) was flagged by the instructor as something they likely wouldn't have thought of independently. 
+This directly demonstrates the lecture's core claim: generating multiple options widens the solution space beyond what a single first attempt would surface.
+
+Case Study 2: Reproduce the Camping Cake Example
+
+Goal: Test the same pattern on a very different, resource-constrained problem to confirm the technique generalizes beyond technical/business 
+problems.
+
+Prompt Used
+
+"I'm camping with my family in the woods. We have tinfoil, a skillet, and no other cooking tools other than fire. Give me three ways to bake a 
+cake and compare and contrast the difficulty of getting the cake to turn out. Assume I have a store-bought cake mix."
+
+Result
+
+Three methods were generated: tinfoil oven, skillet baking, and a dutch oven substitute — each compared across heat control, outcome, and ease 
+of use.
+
+Observation
+
+The comparison surfaced a specific risk (skillet baking on coals requiring constant heat monitoring to avoid burning) that wasn't obvious
+ from the method description alone — this is the "compare and contrast" step doing real work, not just the "give me multiple" step.
+
+Case Study 3: Apply the Pattern to a Physics Lab-Design Problem
+
+Goal: Apply the same technique to a genuine physics teaching decision, testing whether specifying comparison criteria produces a more directly
+ useful result than a generic "pros and cons" request.
+
+Prompt Used
+
+"I'm teaching projectile motion and only have a stopwatch, meter sticks, and a small foam launcher — no motion sensors or photogates. 
+Give me three ways to have students collect meaningful projectile motion data with this equipment, and compare and contrast them by
+ measurement accuracy, setup time, and risk of student error."
+
+What to Evaluate
+Did specifying exact comparison criteria (accuracy, setup time, error risk) produce a more directly usable comparison than a generic request 
+would have?
+Did the comparison surface a risk (e.g., timing inconsistency from human reaction time) that would be easy to overlook when only 
+considering 
+one method?
+Key Takeaway
+
+Specifying the exact criteria to compare by — rather than leaving "pros and cons" generic — produces a comparison that maps directly onto the
+ actual decision being made, making the output immediately actionable for lesson planning.
+
+Case Study 4: Test Critical Evaluation of a Generated "Best Option" Verdict
+
+Goal: Directly test the lecture's caution — that a generated comparison's conclusion (e.g., "Method 3 has the best outcome") should be 
+evaluated, not accepted automatically.
+
+Method
+Use the "ask for options" pattern on a physics teaching decision (e.g., comparing four ways to assess understanding of speed vs. velocity).
+If the AI states one method is clearly best, pause and ask: does this conclusion account for something specific to my classroom that the AI has no way of knowing (e.g., my students' prior exposure to a certain format, available class time, grading capacity)?
+Follow up with a targeted question: "You said Method 2 is best — does that conclusion assume unlimited grading time? My actual constraint is 
+15 minutes per class period to grade this."
+Expected Result
+
+The AI's recommendation may shift once a real constraint is introduced, demonstrating that its "best option" verdict was based only on the 
+criteria explicitly given — not on context it couldn't have known about.
+
+Key Takeaway
+
+A generated comparison is a starting framework, not a final verdict. Any stated "best" option should be checked against real constraints and 
+classroom knowledge the AI doesn't have access to unless it's explicitly provided.
